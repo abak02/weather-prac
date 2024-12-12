@@ -6,7 +6,7 @@ searchButton.addEventListener("click", () => {
     const searchBar = document.getElementById("search");
     let cityName = searchBar.value;
     console.log(cityName);
-    fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + `${cityName}` + "&limit=1&appid=a9938709d8b445590d2178e3200fd17c")
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + `${cityName}` + "&limit=1&appid=a9938709d8b445590d2178e3200fd17c")
         .then(res => res.json())
         .then(data => {
             console.log(data);
